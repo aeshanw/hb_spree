@@ -60,6 +60,24 @@ ActiveRecord::Schema.define(:version => 20111203173731) do
 
   add_index "adjustments", ["order_id"], :name => "index_adjustments_on_order_id"
 
+  create_table "affiliate_events", :force => true do |t|
+    t.string   "name"
+    t.integer  "reward_id"
+    t.string   "reward_type"
+    t.integer  "affiliate_id"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "affiliates", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "partner_id"
+    t.string   "affiliate_email"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "assets", :force => true do |t|
     t.integer  "viewable_id"
     t.string   "viewable_type",           :limit => 50
@@ -457,6 +475,15 @@ ActiveRecord::Schema.define(:version => 20111203173731) do
     t.string  "name"
     t.string  "abbr"
     t.integer "country_id"
+  end
+
+  create_table "store_credits", :force => true do |t|
+    t.integer  "user_id"
+    t.decimal  "amount",           :precision => 8, :scale => 2, :default => 0.0, :null => false
+    t.decimal  "remaining_amount", :precision => 8, :scale => 2, :default => 0.0, :null => false
+    t.string   "reason"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "tax_categories", :force => true do |t|

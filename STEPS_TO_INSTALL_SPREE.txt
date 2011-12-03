@@ -1,0 +1,75 @@
+Steps:
+
+new project: 
+rails new storename -d mysql
+
+edit gemfile:
+gem 'spree','0.70.3'
+
+in terminal:
+bundle install
+rake db:create
+rails g spree:site
+rake db:migrate
+rake db:seed
+rake spree_sample:load
+rake db:admin:create
+
+At this point, there is a spree store setup with samples but no gems
+To improve development performance:
+bundle exec rake assets:precompile:nondigest
+
+Rail’s also provides the following rake task that will delete the entire public/assets directory, this can be helpful to clear out development assets before committing: 
+rake assets:clean
+
+In Gemfile:
+gem 'spree_store_credits', :git => 'git://github.com/spree/spree_store_credits.git'
+
+In terminal:
+bundle install
+rails g spree_store_credits:install -f
+rake db:migrate
+
+We now have a working environment with store credits installed
+
+In Gemfile:
+gem 'spree_email_to_friend', '1.0.0'
+
+In terminal:
+bundle install
+
+We now have a working environment with email_to_friend gem installed
+
+In Gemfile:
+gem 'spree_affiliate', '1.0.0'
+
+In Terminal:
+bundle install
+rails g spree_affiliate:install -f
+rake db:migrate
+
+We now have a working environment with spree_affiliate gem installed
+
+In Gemfile:
+gem 'spree_variant_options', '0.2.0'
+
+In Terminal:
+bundle install
+rails g spree_variant_options:install
+rake db:migrate
+
+We now have a working environment with spree_variant_options installed
+
+In Gemfile:
+gem 'spree_static_content'
+
+In Terminal:
+bundle install
+rails g spree_static_content:install
+rake db:migrate
+
+We now have a working environment with spree_static_content installed
+
+
+
+
