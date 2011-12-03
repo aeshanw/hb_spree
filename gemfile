@@ -36,6 +36,6 @@ group :test do
 end
 
 gem 'spree','0.70.3'
-gem 'spree_store_credits', '1.0.1'
+gem 'spree_store_credits',  :git => 'git://github.com/spree/spree_store_credits.git'
 gem 'spree_email_to_friend', '1.0.0'
-gem 'spree_affiliate','1.0.0'
+gem 'spree_affiliate'
