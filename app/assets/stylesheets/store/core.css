@@ -1,3 +1,22 @@
 div#header{
   background-color:yellow;
 }
+div#logo{
+  float:left;
+}
+div#topNavBar{
+  float:right;
+  clear:both;
+}
+ul#nav-bar{
+  float:none;
+}
+
+div#topMenuBar{
+}
+div#content{
+  border:1px solid red;
+}
+div#footer{
+  background-color:blue;
+}

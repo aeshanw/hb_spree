@@ -320,3 +320,24 @@ span.req { color: red; padding-left: 0.25em; }
 
 */
 
+div#header{
+  background-color:yellow;
+}
+div#logo{
+}
+div#topNavBar{
+  float:right;
+  clear:both;
+}
+ul#nav-bar{
+  float:none;
+}
+
+div#topMenuBar{
+}
+div#content{
+  border:1px solid red;
+}
+div#footer{
+  background-color:blue;
+}
