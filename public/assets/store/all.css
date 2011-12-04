@@ -320,6 +320,11 @@ span.req { color: red; padding-left: 0.25em; }
 
 */
 
+div#container {
+	margin: 0 auto;
+	width:960px;
+}
+
 div#header{
   background-color:yellow;
 }

@@ -4,41 +4,43 @@
     <%= render 'shared/head' %>
   </head>
   <body class="<%= body_class %>" id="<%= @body_id || 'default' %>" data-hook="body">
-    <div id="header" data-hook>
-      <div id="logo" data-hook>
-        <%= logo %>
-      </div>
-      <div id="topNavBar">
-        <ul id="nav-bar" data-hook>
-          <%= render 'shared/store_menu' %>
-        </ul>
-        <p>
-          FREE DELIVERY WITHIN SINGAPORE!
-        </p>
-      </div>
-      <div id="topMenuBar">
-        <%= render 'shared/top_menu_bar' %>
-      </div>
-    </div>
-    <div id="wrapper" data-hook>
-      <% if content_for?(:sidebar) %>
-        <div id="sidebar" data-hook>
-          <%= yield :sidebar %>
+    <div id="container">
+      <div id="header" data-hook>
+        <div id="logo" data-hook>
+          <%= logo %>
         </div>
-      <% end %>
-
-      <div id="content" data-hook>
-        <%= breadcrumbs(@taxon) %>
-        <%= flash_messages %>
-        <%= yield %>
+        <div id="topNavBar">
+          <ul id="nav-bar" data-hook>
+            <%= render 'shared/store_menu' %>
+          </ul>
+          <p>
+            FREE DELIVERY WITHIN SINGAPORE!
+          </p>
+        </div>
+        <div id="topMenuBar">
+          <%= render 'shared/top_menu_bar' %>
+        </div>
       </div>
-    </div>
+      <div id="wrapper" data-hook>
+        <% if content_for?(:sidebar) %>
+          <div id="sidebar" data-hook>
+            <%= yield :sidebar %>
+          </div>
+        <% end %>
 
-    <div id="footer" data-hook>
-      <div id="footer-left" data-hook>
-        <p><%= t(:powered_by) %> <%= link_to 'Spree', 'http://spreecommerce.com/' %></p>
+        <div id="content" data-hook>
+          <%= breadcrumbs(@taxon) %>
+          <%= flash_messages %>
+          <%= yield %>
+        </div>
       </div>
-      <div id="footer-right" data-hook></div>
+
+      <div id="footer" data-hook>
+        <div id="footer-left" data-hook>
+          <p><%= t(:powered_by) %> <%= link_to 'Spree', 'http://spreecommerce.com/' %></p>
+        </div>
+        <div id="footer-right" data-hook></div>
+      </div>
     </div>
     <%= render 'shared/google_analytics' %>
   </body>
