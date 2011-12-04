@@ -6,16 +6,34 @@ div#logo{
 }
 div#topNavBar{
   float:right;
-  clear:both;
 }
 ul#nav-bar{
   float:none;
 }
 
 div#topMenuBar{
+ clear:both;
+}
+ul#left-menu{
+  float:left;
+}
+
+ul.menu li{
+  display:inline;
+  list-style-type: none;
+  padding-right: 20px;
+}
+
+ul#right-menu{
+  float:right;
+}
+
+div#wrapper{
+ clear:both;
 }
 div#content{
   border:1px solid red;
+  float:none;
 }
 div#footer{
   background-color:blue;
