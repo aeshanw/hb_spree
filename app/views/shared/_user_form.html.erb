@@ -1,0 +1,19 @@
+
+<div id="password-credentials">
+  <div>
+    <%= f.label :email, t(:email) %>
+    <%= f.text_field :email, :class => 'title' %>
+  </div>
+  
+  <div>
+    <%= f.label :password, t(:password) %>
+    <%= f.password_field :password, :class => 'title' %>
+  </div>
+
+  <div>
+    <%= f.label :password_confirmation, t(:confirm_password) %>
+    <%= f.password_field :password_confirmation, :class => 'title' %>
+  </div>
+</div>
+
+<div data-hook="signup_below_password_fields"></div>

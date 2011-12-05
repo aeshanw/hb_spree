@@ -1,0 +1,10 @@
+<% @body_id = 'login' %>
+<%= flash_messages %>
+<div id="existing-customer">
+  <h2>Login To Your Account</h2>
+  <div data-hook="login">
+    <%= render :partial => 'shared/login' %>
+    <div class="createNew"><%= t(:not_yet_a_member?)%> <%= link_to t(:create_a_new_account), signup_path %></div>
+  </div>
+</div>
+<div data-hook="login_extras"></div>

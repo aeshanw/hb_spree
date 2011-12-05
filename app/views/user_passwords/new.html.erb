@@ -1,0 +1,17 @@
+<div id="forgot-password">
+  <h2><%= t(:forgot_password) %></h2>
+
+  <p><%= t(:instructions_to_reset_password) %></p>
+
+  <%= form_for User.new, :as => :user, :url => user_password_path do |f| %>
+    <div id="password-credentials">
+      <div>
+        <%= f.label :email, t(:email) %>
+        <%= f.email_field :email %>
+      </div>
+      <div id="submission">
+        <%= f.submit t(:reset_password), :class => "button" %>
+      </div>
+    </div>
+  <% end %>
+</div>

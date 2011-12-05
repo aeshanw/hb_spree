@@ -1,0 +1,22 @@
+<% @body_id = 'signup' %>
+
+<%= render 'shared/error_messages', :target => @user %>
+
+<div id="new-customer">
+  <h2><%= t(:sign_up_for_an_account) %></h2>
+
+  <div data-hook="signup">
+
+    <%= form_for :user, :url => registration_path(@user) do |f| %>
+      <div data-hook="signup_inside_form"%>
+        <%= render 'shared/user_form', :f => f %>
+        <div id="submission"><%= f.submit t(:create), :class => 'button primary' %></div>
+      </div>
+    <% end %>
+    <div class="createNew"><%= t(:already_have_an_account?) %> <%= link_to t(:login_here), login_path %></div>
+
+  </div>
+
+</div>
+
+<div data-hook="login_extras"></div>

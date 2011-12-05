@@ -7,7 +7,7 @@
     <div id="container">
       <div id="header" data-hook>
         <div id="logo" data-hook>
-          <img src="/assets/store/logo.png">
+          <img src="/hbImages/logo.png">
         </div>
         <div id="topNavBar">
           <ul id="nav-bar" data-hook>
@@ -29,8 +29,7 @@
         <% end %>
 
         <div id="content" data-hook>
-          <%= breadcrumbs(@taxon) %>
-          <%= flash_messages %>
+          <%= breadcrumbs(@taxon) %>          
           <%= yield %>
         </div>
       </div>
