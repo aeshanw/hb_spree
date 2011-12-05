@@ -1,14 +1,42 @@
-div#header{
-  background-color:yellow;
+div#container {
+	margin: 0 auto;
+	width:960px;
 }
+
+div#container a {
+	color: #555555;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+div#container a:hover {
+	color: #9fc4da; 
+}
+
 div#logo{
-  float:left;
+  	float:left;
+	padding: 15px;
+	padding-bottom:0;
 }
 div#topNavBar{
   float:right;
 }
-ul#nav-bar{
-  float:none;
+
+div#header div#topNavBar ul#nav-bar{
+	font-size: 0.8em;
+ 	line-height:1em;
+}
+
+div#header div#topNavBar ul#nav-bar li {
+	padding: 10px;
+	height: auto;
+}
+
+div#header div#topNavBar p {
+	font-size: 0.8em;
+	margin: 30px 0 0;
+	padding: 20px 10px 0 0;
+	text-align: right;
 }
 
 div#wrapper{
@@ -20,6 +48,10 @@ div#content{
 }
 div#footer{
   background-color:blue;
+}
+
+#topNavBar {
+	
 }
 
 #topMenuBar {  
@@ -52,7 +84,8 @@ div#footer{
 } 
  
 #topMenuBar ul.menu li a { 
-	text-decoration: none; 
+	text-decoration: none;
+	font-weight: normal; 
 	padding: .2em 1em; 
 	color: #f6faf7; 
 	background-color: #000033; 
