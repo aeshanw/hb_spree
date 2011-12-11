@@ -44,3 +44,8 @@
       });
   });
 </script>
+
+<% content_for :head do %>
+  <%= javascript_include_tag 'jquery.nivo.slider.pack' %>
+  <%= stylesheet_link_tag 'nivo-slider', :media => 'screen' %>
+<% end %>

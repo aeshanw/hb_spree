@@ -70,6 +70,16 @@ rake db:migrate
 
 We now have a working environment with spree_static_content installed
 
+In Gemfile:
+gem 'rmagick'
+gem 'carrierwave'
+gem 'spree_flexi_variants', :git=>'git@github.com:jsqu99/spree_flexi_variants.git'
+
+In Terminal:
+bundle install
+
+bundle exec rails g spree_flexi_variants:install               # copies the assets
+
 
 
 

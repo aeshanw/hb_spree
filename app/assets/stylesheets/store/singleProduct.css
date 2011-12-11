@@ -1,0 +1,125 @@
+#single-product-page {
+	padding-top: 0.5em;
+}
+
+div#product-images {
+	width: 55%;
+	float:left;
+	padding-left:3em;
+	padding-top:4em;
+}
+
+div#main-image {
+	border: 1px solid #eee;
+	padding:10px;
+}
+
+#product-images #thumbnails {
+	padding-top:20px;
+	display:block;
+	clear:both;
+}
+
+#productData {
+	width: 35%;
+	float:left;
+	display:inline;
+	margin-right:1em;
+	font-size:0.9em;
+}
+
+#productData h2 {
+	margin-bottom:0.15em;
+}
+
+#product-variants {
+	display:block;
+	clear:both;
+}
+
+#product-variants p {
+	padding-top:0.5em;
+	padding-bottom:0.1em;
+	margin-bottom:0;
+}
+
+#product-variants ul {
+	display:block;
+	margin-left:0;
+}
+
+#product-variants ul li {
+	display:inline;
+	float:left; 
+	list-style:none; 
+	margin:3px;
+	width: 30px;
+	border: 1px solid #ddd;
+}
+
+#product-variants label {
+	float:right;
+	padding:2.5px;
+	text-align:center;
+	width:25px;
+}
+
+#product-variants input {
+    position:absolute;
+    left:-20px;
+}
+
+#product-variants label.focused
+{
+    background-color: #000033;
+	color: #fff;
+}
+
+#product-variants span {
+	width:25px;
+	padding:5px;
+	text-align:center;
+}
+
+#product-variants .out-of-stock {
+	color: #ccc;
+}
+
+#ad_hoc_options {
+	display:block;
+	padding:5px;
+	clear:both;
+}
+
+#ad_hoc_options label {
+	display:block;
+	clear:both;
+}
+
+#cart-form {
+	width:100%;
+}
+
+#cartPart {
+	display:block;
+	clear:both;
+	margin-top: 1em;
+}
+
+#cartPart dl {
+	float: left;
+	width:50%;
+}
+
+#cartPart #quantity {
+	display:inline;
+	float:left;
+	margin-left: -20px;
+    margin-top: 5px;
+}
+
+#cartPart #add-to-cart-button {
+	display: inline;
+	float: left;
+	margin-left:10px;
+}

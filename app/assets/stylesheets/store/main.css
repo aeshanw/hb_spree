@@ -1,0 +1,449 @@
+div#container {
+	margin: 0 auto;
+	width:960px;
+}
+
+div#container a {
+	color: #555555;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+div#container a:hover {
+	color: #9fc4da; 
+}
+
+div#logo{
+  	float:left;
+	padding: 15px;
+	padding-bottom:0;
+}
+div#topNavBar{
+  float:right;
+}
+
+div#header {
+	margin:0;
+}
+div#header div#topNavBar ul#nav-bar{
+	font-size: 0.8em;
+ 	line-height:1em;
+}
+
+div#header div#topNavBar ul#nav-bar li {
+	padding: 10px;
+	height: auto;
+}
+
+div#header div#topNavBar p {
+	font-size: 0.8em;
+	margin: 30px 0 0;
+	padding: 20px 10px 0 0;
+	text-align: right;
+}
+
+div#wrapper{
+ clear:both;
+}
+
+div#content{
+  float:none;
+}
+
+div#footer{
+  background-color:blue;
+}
+
+#topNavBar {
+	
+}
+
+#topMenuBar {  
+  clear:both;
+  display:block;
+  height:30px;
+  background-color:#000033;
+} 
+
+#topMenuBar ul.menu { 
+	margin: 0; 
+	font-size:0.9em;
+	padding: 5px; 
+	list-style-type: none; 
+	text-align: center; 
+	background-color: #000033; 
+} 
+
+#topMenuBar ul#left-menu {
+	float:left;
+}
+
+#topMenuBar ul#right-menu {
+	float:right;
+	display: inline;
+}
+ 
+#topMenuBar ul.menu li {  
+	display: inline; 
+} 
+ 
+#topMenuBar ul.menu li a { 
+	text-decoration: none;
+	font-weight: normal; 
+	padding: .2em 1em; 
+	color: #f6faf7; 
+	background-color: #000033; 
+} 
+ 
+#topMenuBar ul.menu li a:hover { 
+	color: #9fc4da; 
+	background-color: #000033; 
+}
+
+/*=================================*/
+/* Nivo Slider CSS
+/*=================================*/
+.theme-default #slider {
+    width:100%;
+}
+
+.theme-default .nivoSlider {
+	position:relative;
+	background:#fff url(/assets/store/default/loading.gif) no-repeat 50% 50%;
+    margin-bottom:50px;
+    -webkit-box-shadow: 0px 1px 5px 0px #4a4a4a;
+    -moz-box-shadow: 0px 1px 5px 0px #4a4a4a;
+    box-shadow: 0px 1px 5px 0px #4a4a4a;
+}
+.theme-default .nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	display:none;
+}
+.theme-default .nivoSlider a {
+	border:0;
+	display:block;
+}
+
+.theme-default .nivo-controlNav {
+	position:absolute;
+	left:50%;
+	bottom:-42px;
+    margin-left:-40px; /* Tweak this to center bullets */
+}
+.theme-default .nivo-controlNav a {
+	display:block;
+	width:22px;
+	height:22px;
+	background:url(/assets/store/default/bullets.png) no-repeat;
+	text-indent:-9999px;
+	border:0;
+	margin-right:3px;
+	float:left;
+}
+.theme-default .nivo-controlNav a.active {
+	background-position:0 -22px;
+}
+
+.theme-default .nivo-directionNav a {
+	display:block;
+	width:30px;
+	height:30px;
+	background:url(/assets/store/default/arrows.png) no-repeat;
+	text-indent:-9999px;
+	border:0;
+}
+.theme-default a.nivo-nextNav {
+	background-position:-30px 0;
+	right:15px;
+}
+.theme-default a.nivo-prevNav {
+	left:15px;
+}
+
+.theme-default .nivo-caption {
+    font-family: Helvetica, Arial, sans-serif;
+}
+.theme-default .nivo-caption a {
+    color:#fff;
+    border-bottom:1px dotted #fff;
+}
+.theme-default .nivo-caption a:hover {
+    color:#fff;
+}
+
+/*homepage blurb css*/
+
+.blurb {
+	height:100px;
+	background-color:#666;
+	padding: 0 5px;
+}
+
+/*=================*/
+/*   Breadcrumb    */
+/*=================*/
+
+#breadcrumbs { 
+	margin-top:1em;
+	margin-bottom: 1em; 
+	margin-left:3.3em;
+	font-size:0.8em;
+}
+
+#breadcrumbs ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  display: inline;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+#breadcrumbs ul li {
+  margin: 0px;
+  padding: 0px;
+  display: inline;
+}
+#breadcrumbs ul li {
+  line-height: 20px;
+  color: #666666;
+}
+#breadcrumbs ul li a {
+  text-decoration: none;
+  padding: 5px 7px;
+  color: #777777;
+}
+#breadcrumbs ul li span {
+  text-decoration: none;
+  padding: 5px 7px;
+  color: #666666;
+}
+#breadcrumbs ul li span { color: #333333; }
+ 
+/*================*/
+/* Login Page CSS */
+/*================*/
+
+.flash {
+	margin: 2em 25px;
+	background: none repeat scroll 0 0 #890000;
+    border: 1px solid #550000;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 0 5px #770000;
+    color: #FFFFFF;
+    font-size: 11px;
+    left: 95%;
+    padding: 5px 10px;
+    text-shadow: 0 1px 0 #550000;
+    white-space: nowrap;
+	clear: both;
+	width: 30%;
+}
+
+#existing-customer, #new-customer, #forgot-password {
+	width: 55%;
+	padding: 20px;
+	padding-top: 5px;
+}
+
+#password-credentials {
+	width:100%;
+}
+
+#password-credentials div {
+	background: none repeat scroll 0 0 #EEEEEE;
+    border-radius: 3px 3px 3px 3px;
+    margin: 0.5em 25px;
+    padding: 4px;
+    position: relative;
+    text-align: right;
+}
+
+#password-credentials label {
+	float: left;
+    line-height: 30px;
+    padding-left: 10px;
+}
+
+#password-credentials .title{
+	    border: 1px solid #CCCCCC;
+	    box-shadow: 0 0 5px #CCCCCC inset;
+	    font-size: 12px;
+	    line-height: 1em;
+	    padding: 4px;
+	    width: 280px;
+}
+
+p.forgot {
+	font-size: 11px;
+    text-align: right;
+ 	margin: 0.5em 25px;
+}
+
+div#submission {
+	background: none repeat scroll 0 0 transparent;
+    margin: 1em 25px;
+    text-align: left;
+}
+
+div#submission .button {
+	background-color:#000033;
+	-moz-border-radius:12px;
+	-webkit-border-radius:12px;
+	border-radius:12px;
+	border:1px solid #f0f0f0;
+	display:inline-block;
+	color:#f6faf7;
+	font-family:arial;
+	font-size:16px;
+	font-weight:normal;
+	padding:12px 29px;
+	text-decoration:none;
+	margin-right:30px;
+}
+div#submission .button:hover {
+	background-color:#000033;
+	color:#9fc4da;
+}
+
+div#submission .button:active {
+	position:relative;
+	top:1px;
+}
+
+div.createNew {
+    margin: 0.5em 25px;
+}
+
+#errorExplanation {
+	padding-left: 20px;
+	padding-top:20px;
+}
+
+#forgot-password p {
+	margin: 0.5em 25px;
+}
+
+/*==========================*/
+/* All Product Listing Page */
+/*==========================*/
+
+body.two-col div#content {
+	max-width:80%;
+}
+
+body.two-col div#content h1 {
+	margin-left:1.2em;
+	font-size:2.5em;
+	margin-bottom:0;
+}
+
+body.two-col div#content .taxon h2 {
+	margin-left:2em;
+	margin-bottom:0;
+	font-size:2em;
+}
+
+div#sidebar {
+	max-width:18%;
+	-moz-border-radius: 3px;
+  	-webkit-border-radius: 3px;
+  	border-radius: 3px;
+  	border: 1px solid #dddddd;
+	margin-top: 3em;
+	margin-bottom:3em;
+	padding: 7px;
+}
+div#sidebar .taxonomy-root {
+	font-size:1.4em;
+}
+
+.taxons-list {
+  list-style: none;
+  margin: 0 0 1.5em -15px;
+}
+.taxons-list li { margin: 0; }
+.taxons-list li a {
+  cursor: pointer !important;
+  text-decoration: none;
+  color: #333333;
+  display: block;
+  line-height: 2.5em;
+  padding-left: 20px;
+  width: 170px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.taxons-list li.current { width: 200px; }
+.taxons-list li.current a {
+  width: 200px;
+  background: url(/assets/store/product/menu-current.png) right center no-repeat;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.taxons-list li.current a.root { width: 183px; }
+.taxons-list a.root {
+  color: #222222;
+  font-size: 1.5em;
+  text-indent: -5px;
+  line-height: 2.2em;
+}
+
+ul#products {
+  list-style: none;
+  margin-top: 1em;
+  margin-left: 2.8em;
+  padding: 0px;
+}
+ul#products li {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  height: 180px;
+  width: 140px;
+  text-align: center;
+  float: left;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #dddddd;
+  position: relative;
+}
+ul#products li a {
+  display: block;
+  text-decoration: none;
+  color: #111111;
+}
+ul#products li a.info {
+  font-size:0.8em;	
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  padding: 5px;
+  width: 150px;
+  min-height: 60px;
+  background: #ffffff url(/assets/store/product/shadow_top.png) 0px -35px repeat-x;
+  border-top: 1px solid #ffffff;
+}
+ul#products li span { 
+	display: block;
+	position:absolute;
+	left:60px;
+	bottom:2px;
+	z-index:3;
+	color: #2e6ab1;
+}
+
+ul#products li:hover { border-color: #1b1b1b; }
+
+ul#products li:hover a.info {
+  background: #1b1b1b url(/assets/store/product/bottom_shine.png) bottom left repeat-x;
+  color: #ffffff;
+}
+
+ul#products li:hover span {
+	color: #9fc4da;
+}
+

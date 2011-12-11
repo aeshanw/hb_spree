@@ -1,0 +1,9 @@
+<% unless @product_properties.empty? %>
+<div class="tabber" data-hook>
+<% for product_property in @product_properties %>
+  <div class="tabbertab" title= "<%= product_property.property.presentation %>">
+    <%= product_property.value %>
+  </div>
+<% end %>
+</div>
+<% end %>
