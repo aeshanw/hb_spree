@@ -109,7 +109,7 @@ div#footer{
 
 .theme-default .nivoSlider {
 	position:relative;
-	background:#fff url(/hbImages/default/loading.gif) no-repeat 50% 50%;
+	background:#fff url(/assets/store/default/loading.gif) no-repeat 50% 50%;
     margin-bottom:50px;
     -webkit-box-shadow: 0px 1px 5px 0px #4a4a4a;
     -moz-box-shadow: 0px 1px 5px 0px #4a4a4a;
@@ -136,7 +136,7 @@ div#footer{
 	display:block;
 	width:22px;
 	height:22px;
-	background:url(/hbImages/default/bullets.png) no-repeat;
+	background:url(/assets/store/default/bullets.png) no-repeat;
 	text-indent:-9999px;
 	border:0;
 	margin-right:3px;
@@ -150,7 +150,7 @@ div#footer{
 	display:block;
 	width:30px;
 	height:30px;
-	background:url(/hbImages/default/arrows.png) no-repeat;
+	background:url(/assets/store/default/arrows.png) no-repeat;
 	text-indent:-9999px;
 	border:0;
 }
@@ -380,7 +380,7 @@ div#sidebar .taxonomy-root {
 .taxons-list li.current { width: 200px; }
 .taxons-list li.current a {
   width: 200px;
-  background: url(/hbImages/product/menu-current.png) right center no-repeat;
+  background: url(/assets/store/product/menu-current.png) right center no-repeat;
   white-space: nowrap;
   overflow: hidden;
 }
@@ -424,7 +424,7 @@ ul#products li a.info {
   padding: 5px;
   width: 150px;
   min-height: 60px;
-  background: #ffffff url(/hbImages/product/shadow_top.png) 0px -35px repeat-x;
+  background: #ffffff url(/assets/store/product/shadow_top.png) 0px -35px repeat-x;
   border-top: 1px solid #ffffff;
 }
 ul#products li span { 
@@ -439,7 +439,7 @@ ul#products li span {
 ul#products li:hover { border-color: #1b1b1b; }
 
 ul#products li:hover a.info {
-  background: #1b1b1b url(/hbImages/product/bottom_shine.png) bottom left repeat-x;
+  background: #1b1b1b url(/assets/store/product/bottom_shine.png) bottom left repeat-x;
   color: #ffffff;
 }
 
