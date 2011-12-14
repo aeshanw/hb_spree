@@ -33,7 +33,7 @@ rake db:migrate
 We now have a working environment with store credits installed
 
 In Gemfile:
-gem 'spree_email_to_friend', '1.0.0'
+gem 'spree_email_to_friend', :git => 'git://github.com/spree/spree_email_to_friend.git', :ref => 'aa68252f46eebe63243ea417b69f1bc1cb149d10'
 
 In terminal:
 bundle install
@@ -51,26 +51,6 @@ rake db:migrate
 We now have a working environment with spree_affiliate gem installed
 
 In Gemfile:
-gem 'spree_variant_options', '0.2.0'
-
-In Terminal:
-bundle install
-rails g spree_variant_options:install
-rake db:migrate
-
-We now have a working environment with spree_variant_options installed
-
-In Gemfile:
-gem 'spree_static_content'
-
-In Terminal:
-bundle install
-rails g spree_static_content:install
-rake db:migrate
-
-We now have a working environment with spree_static_content installed
-
-In Gemfile:
 gem 'rmagick'
 gem 'carrierwave'
 gem 'spree_flexi_variants', :git=>'git@github.com:jsqu99/spree_flexi_variants.git'
@@ -80,6 +60,7 @@ bundle install
 
 bundle exec rails g spree_flexi_variants:install               # copies the assets
 
+We now have a working environment with spree_affiliate gem installed
 
 
 

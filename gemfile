@@ -37,8 +37,8 @@ end
 
 gem 'spree','0.70.3'
 gem 'spree_store_credits',  :git => 'git://github.com/spree/spree_store_credits.git'
-gem 'spree_email_to_friend', '1.0.0'
-gem 'spree_affiliate'
+gem 'spree_email_to_friend', :git => 'git://github.com/spree/spree_email_to_friend.git', :ref => 'aa68252f46eebe63243ea417b69f1bc1cb149d10'
+gem 'spree_affiliate' #, :git => 'git://github.com/spree/spree_affiliate.git'
 gem 'rmagick'
 gem 'carrierwave'
 gem 'spree_flexi_variants', :git=>'git@github.com:jsqu99/spree_flexi_variants.git'
