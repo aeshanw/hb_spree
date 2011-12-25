@@ -1,0 +1,103 @@
+/* $Id: example.css,v 1.5 2006/03/27 02:44:36 pat Exp $ */
+
+/*--------------------------------------------------
+  REQUIRED to hide the non-active tab content.
+  But do not hide them in the print stylesheet!
+  --------------------------------------------------*/
+div#wrapper .tabberlive .tabbertabhide {
+ display:none;
+}
+
+/*--------------------------------------------------
+  .tabber = before the tabber interface is set up
+  .tabberlive = after the tabber interface is set up
+  --------------------------------------------------*/
+div#wrapper .tabber {
+}
+div#wrapper .tabberlive {
+ margin-top:1em;
+}
+
+/*--------------------------------------------------
+  ul.tabbernav = the tab navigation list
+  li.tabberactive = the active tab
+  --------------------------------------------------*/
+div#wrapper ul.tabbernav
+{
+ margin:auto;
+ width:100%;
+ padding-left: 20%;
+/* border-bottom: 1px solid #778; */
+}
+
+div#wrapper ul.tabbernav li
+{
+ font-size:0.8em;
+ text-transform:uppercase;
+ list-style: none;
+ margin: 0;
+ display: inline;
+}
+
+div#wrapper ul.tabbernav li a
+{	
+ font-weight:normal;
+ padding: 3px 2%;
+/* margin-left: 3px; */
+ border: 1px solid #aaa;
+/* border-bottom: none; */
+ background: #000033;
+ text-decoration: none;
+ color:#fff;
+}
+
+div#wrapper ul.tabbernav li a:link { color: #f6faf7; }
+div#wrapper ul.tabbernav li a:visited { color: #f6faf7; }
+
+div#wrapper ul.tabbernav li a:hover
+{
+ color: #9fc4da;
+ border-color: #000;
+}
+
+div#wrapper ul.tabbernav li.tabberactive a
+{
+ background-color: #fff;
+ color:#000;
+ border: 1px solid #aaa;
+}
+
+div#wrapper ul.tabbernav li.tabberactive a:hover
+{
+/* color: #000;
+ background: white;
+ border-bottom: 1px solid white; */
+}
+
+/*--------------------------------------------------
+  .tabbertab = the tab content
+  Add style only after the tabber interface is set up (.tabberlive)
+  --------------------------------------------------*/
+div#wrapper .tabberlive .tabbertab {
+ padding:5px;
+ border-top:0;
+ height:auto;	
+ overflow:auto;
+ background-color:#fff;
+ color:#000;
+
+ /* If you don't want the tab size changing whenever a tab is changed
+    you can set a fixed height  border:1px solid #eee;*/
+
+ /* height:200px; */
+
+ /* If you set a fix height set overflow to auto and you will get a
+    scrollbar when necessary */
+
+ /* overflow:auto; */
+}
+
+div#wrapper .tabbertab h2 {
+	margin: 0;
+	font-size:1.4em;
+}

@@ -13,6 +13,12 @@ div#container a:hover {
 	color: #9fc4da; 
 }
 
+div#container hr {
+	margin:0;
+	margin-top: 1em;
+	margin-bottom:0.5em;
+}
+
 div#logo{
   	float:left;
 	padding: 15px;
@@ -242,7 +248,17 @@ div#footer{
 	width: 30%;
 }
 
-#existing-customer, #new-customer, #forgot-password {
+.notice {
+	font-size:14px;
+	width:50%;
+	background-color: #CCDDFF;
+	border: 1px solid #99AACC;
+	color: #556699;
+	box-shadow: 0 0 5px #556699;
+	text-shadow: 0 1px 0 #CCDDFF;
+}
+
+#existing-customer, #new-customer, #forgot-password, .edit_user {
 	width: 55%;
 	padding: 20px;
 	padding-top: 5px;
@@ -288,7 +304,15 @@ div#submission {
     text-align: left;
 }
 
-div#submission .button {
+.edit_user p {
+	margin: 20px 25px;
+}
+
+.edit_user .user_email {
+	display:none;
+}
+
+div#submission .button, .edit_user p input[type=submit] {
 	background-color:#000033;
 	-moz-border-radius:12px;
 	-webkit-border-radius:12px;
@@ -303,12 +327,12 @@ div#submission .button {
 	text-decoration:none;
 	margin-right:30px;
 }
-div#submission .button:hover {
+div#submission .button:hover, .edit_user p input[type=submit]:hover {
 	background-color:#000033;
 	color:#9fc4da;
 }
 
-div#submission .button:active {
+div#submission .button:active, .edit_user p input[type=submit]:active {
 	position:relative;
 	top:1px;
 }
@@ -445,5 +469,214 @@ ul#products li:hover a.info {
 
 ul#products li:hover span {
 	color: #9fc4da;
+}
+
+/*======================*/
+/*         Cart         */
+/*======================*/
+
+table th {
+    background: none repeat scroll 0 0 transparent;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+div.links a#checkout-link, #update-button, div#empty-cart .button, div#checkout div.form-buttons .button {
+	background-color:#000033;
+	-moz-border-radius:12px;
+	-webkit-border-radius:12px;
+	border-radius:12px;
+	border:1px solid #f0f0f0;
+	display:inline-block;
+	color:#f6faf7;
+	font-family:arial;
+	font-size:16px;
+	font-weight:normal;
+	padding:7px 20px;
+	text-decoration:none;
+	margin-right:10px;
+}
+
+div.links a#checkout-link, #update-button, div#empty-cart .button {
+	color: #fff;
+}
+
+div.links a#checkout-link:hover, #update-button:hover, div#empty-cart .button:hover, div#checkout div.form-buttons .button:hover {
+	background-color:#000033;
+	color:#9fc4da;
+}
+
+div.links a#checkout-link:active, #update-button:active, div#empty-cart .button:active, div#checkout div.form-buttons .button:active {
+	position:relative;
+	top:1px;
+}
+
+/*======================*/
+/*      Checkout   	    */
+/*======================*/
+
+ol.progress-steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1em;
+  font-size: 12px;
+}
+ol.progress-steps li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: block;
+  float: left;
+  color: #999999;
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-image: url(/assets/store/step-progress/incomplete-incomplete.gif);
+}
+ol.progress-steps li span {
+  padding: 6px 14px 7px 24px;
+  display: block;
+  float: left;
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+ol.progress-steps li a {
+  text-decoration: none;
+  color: #333333;
+}
+ol.progress-steps li.current-first span { padding-left: 14px; }
+ol.progress-steps li.completed-first span { padding-left: 14px; }
+ol.progress-steps li.current-first { background-image: url(/assets/store/step-progress/current-first.gif); }
+ol.progress-steps li.completed-first { background-image: url(/assets/store/step-progress/completed-first.gif) !important; }
+ol.progress-steps li.current { color: #ffffff; }
+ol.progress-steps li.current-first { color: #ffffff; }
+ol.progress-steps li.current-last { color: #ffffff; }
+ol.progress-steps li.completed { background-image: url(/assets/store/step-progress/completed-completed.gif); }
+ol.progress-steps li.current { background-image: url(/assets/store/step-progress/completed-current.gif); }
+ol.progress-steps li.current-last { background-image: url(/assets/store/step-progress/completed-current.gif); }
+ol.progress-steps li.next { background-image: url(/assets/store/step-progress/current-incomplete.gif); }
+ol.progress-steps li.next-last { background-image: url(/assets/store/step-progress/current-incomplete.gif); }
+ol.progress-steps li.last span { background-image: url(/assets/store/step-progress/incomplete-right.gif); }
+ol.progress-steps li.next-last span { background-image: url(/assets/store/step-progress/incomplete-right.gif); }
+ol.progress-steps li.current-last span { background-image: url(/assets/store/step-progress/current-right.gif); }
+
+div#checkout form p.field {
+  margin-bottom: 0.5em;
+  clear: both;
+}
+div#checkout form p.field span.req {
+  color: red;
+  margin-left: 2px;
+  top: -3px;
+}
+div#checkout form p.field input[type=text] {
+  float: left;
+  margin: 0 5px 7px 0;
+}
+div#checkout form p.field select {
+  float: left;
+  margin: 0 5px 7px 0;
+}
+div#checkout form p.field.radios { line-height: 150%; }
+div#checkout label { font-weight: bold; width:auto; }
+
+div#checkout { position: relative; }
+div#checkout .progress-steps {
+  position: absolute;
+  top: 0.5em;
+  right: 0;
+}
+div#checkout form {
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+div#checkout #checkout_form_address { background-image: url(/assets/store/steps/2.png); }
+div#checkout #checkout_form_delivery { background-image: url(/assets/store/steps/3.png); }
+div#checkout #checkout_form_payment #payment { padding:0;}
+
+div#checkout #checkout_form_address fieldset#shipping, fieldset#billing, fieldset#shipping_method, fieldset#payment, fieldset#payment fieldset, fieldset#order_details {background:none; border:none;} 
+div#checkout #checkout_form_address fieldset#shipping legend, fieldset#billing legend, fieldset#shipping_method legend, fieldset#payment legend, fieldset#payment fieldset legend, fieldset#order_details legend {background:none; color:#000; border:none; font-size:140%;}
+div#checkout #checkout_form_address fieldset#billing label, fieldset#shipping label  {
+  float: left;
+  text-align: right;
+  font-weight: bold;
+  display:inline;
+  width:auto;
+}
+
+div#checkout #checkout_form_address #billing label.error, #shipping label.error {
+  color: red;
+  float: left;
+  text-align: left;
+  display: inline-block;
+  top: 0px;
+  font-size: 11px;
+  border: none;
+  padding: 0px;
+  width: auto;
+}
+
+div#checkout #checkout_form_address fieldset#billing input { width: 304px; }
+div#checkout #checkout_form_address fieldset#shipping input { width: 304px; }
+div#checkout #checkout_form_address fieldset#billing select { width: 304px; }
+div#checkout #checkout_form_address fieldset#shipping select { width: 304px; }
+div#checkout #checkout_form_address fieldset#billing p.checkbox { padding-left: 200px; }
+div#checkout #checkout_form_address fieldset#shipping p.checkbox { padding-left: 0px; }
+div#checkout .form-buttons { padding-left: 10px; }
+div#checkout #checkout_form_address fieldset#billing p.checkbox label {
+  width: auto !important;
+  float: none !important;
+}
+div#checkout #checkout_form_address fieldset#shipping p.checkbox label {
+  width: auto !important;
+  float: none !important;
+}
+div#checkout #checkout_form_address fieldset#billing p.checkbox input { width: auto !important; }
+div#checkout #checkout_form_address fieldset#shipping p.checkbox input { width: auto !important; }
+div#checkout #checkout_form_payment { background-image: url(/assets/store/steps/5.png); }
+div#checkout #checkout_form_payment select { width: 75px; }
+div#checkout #checkout_form_payment #payment {
+  display: inline;
+  float: left;
+  width: 310px;
+  margin-right: 10px;
+}
+div#checkout #checkout_form_payment #order_details {
+  display: inline;
+  float: left;
+  width: 470px;
+  margin-right: 10px;
+}
+div#checkout #payment-methods {
+  list-style: none;
+  display: block;
+  padding: 0;
+  margin: 0;
+  width: 720px;
+}
+div#checkout #payment-methods li {
+  display: block;
+  display: inline;
+  float: left;
+  width: 190px;
+  margin-right: 10px;
+}
+div#checkout #payment-methods li.last {
+  display: inline;
+  float: left;
+  width: 190px;
+}
+div#checkout #checkout-summary {
+  background-color: #c3c9df;
+  float: right;
+  margin-top: 10px;
+  padding: 20px;
+  width: 180px;
+}
+div#checkout #checkout-summary {
+  background-color: #c3c9df;
+  float: right;
+  margin-top: 10px;
+  padding: 20px;
+  width: 180px;
 }
 

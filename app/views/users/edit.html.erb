@@ -1,0 +1,12 @@
+<%= render 'shared/error_messages', :target => @user %>
+
+<h2><%= t(:change_password) %></h2>
+
+<%= form_for @user, :html => { :method => :put } do |f| %>
+  <%= render 'shared/user_form', :f => f %>
+  <p>
+    <%= f.submit t(:update) %>
+  </p>
+<% end %>
+
+<p>Note: This will require you to log in again.</p>
