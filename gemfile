@@ -42,3 +42,8 @@ gem 'spree_affiliate' #, :git => 'git://github.com/spree/spree_affiliate.git'
 gem 'rmagick'
 gem 'carrierwave'
 gem 'spree_flexi_variants', :git=>'git@github.com:jsqu99/spree_flexi_variants.git'
+gem 'spree_last_address', :git => "git://github.com/dancinglightning/spree-last-address.git"
+# gem 'spree_paypal_express', :git => 'git://github.com/spree/spree_paypal_express.git'
+
+
+gem 'deface', :git => 'git://github.com/railsdog/deface.git'

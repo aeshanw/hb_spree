@@ -232,7 +232,7 @@ div#footer{
 /* Login Page CSS */
 /*================*/
 
-.flash {
+/* .flash {
 	margin: 2em 25px;
 	background: none repeat scroll 0 0 #890000;
     border: 1px solid #550000;
@@ -246,7 +246,7 @@ div#footer{
     white-space: nowrap;
 	clear: both;
 	width: 30%;
-}
+} 
 
 .notice {
 	font-size:14px;
@@ -256,6 +256,26 @@ div#footer{
 	color: #556699;
 	box-shadow: 0 0 5px #556699;
 	text-shadow: 0 1px 0 #CCDDFF;
+}*/
+.flash {
+    border-radius: 5px 5px 5px 5px;
+    font-size: 1.3em;
+    margin-bottom: 1em;
+    padding: 0.8em;
+}
+
+.flash.notice {
+    background: url("/assets/store/shadow_top.png") repeat-x scroll 0 -50px #CCDDFF;
+    border: 1px solid #99AACC;
+    color: #556699;
+    margin-top: 1em;
+}
+
+.flash.errors {
+    background: url("/assets/store/shadow_top.png") repeat-x scroll 0 -50px #F4B4B4;
+    border: 1px solid #000000;
+    color: #000000;
+    margin-top: 1em;
 }
 
 #existing-customer, #new-customer, #forgot-password, .edit_user {
@@ -615,6 +635,15 @@ div#checkout #checkout_form_address #billing label.error, #shipping label.error 
   width: auto;
 }
 
+div#checkout input[type="text"], input[type="password"] {
+    border: 2px solid #A0A0A0;
+    border-radius: 2px 2px 2px 2px;
+    color: #333333;
+    font-size: 18px;
+    margin-bottom: 4px;
+    padding: 7px 5px 5px;
+}
+
 div#checkout #checkout_form_address fieldset#billing input { width: 304px; }
 div#checkout #checkout_form_address fieldset#shipping input { width: 304px; }
 div#checkout #checkout_form_address fieldset#billing select { width: 304px; }
@@ -626,6 +655,7 @@ div#checkout #checkout_form_address fieldset#billing p.checkbox label {
   width: auto !important;
   float: none !important;
 }
+
 div#checkout #checkout_form_address fieldset#shipping p.checkbox label {
   width: auto !important;
   float: none !important;
