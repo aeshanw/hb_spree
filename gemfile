@@ -47,3 +47,5 @@ gem 'spree_last_address', :git => "git://github.com/dancinglightning/spree-last-
 
 
 gem 'deface', :git => 'git://github.com/railsdog/deface.git'
+
+gem 'spree_paypal_website_standard', '0.8.4'

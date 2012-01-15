@@ -4,7 +4,7 @@
   REQUIRED to hide the non-active tab content.
   But do not hide them in the print stylesheet!
   --------------------------------------------------*/
-.tabberlive .tabbertabhide {
+div#product-description .tabberlive .tabbertabhide {
  display:none;
 }
 
@@ -12,9 +12,9 @@
   .tabber = before the tabber interface is set up
   .tabberlive = after the tabber interface is set up
   --------------------------------------------------*/
-.tabber {
+div#product-description .tabber {
 }
-.tabberlive {
+div#product-description .tabberlive {
  margin-top:1em;
 }
 
@@ -22,7 +22,7 @@
   ul.tabbernav = the tab navigation list
   li.tabberactive = the active tab
   --------------------------------------------------*/
-ul.tabbernav
+div#product-description ul.tabbernav
 {
  margin:0;
  padding: 1px 0;
@@ -30,14 +30,14 @@ ul.tabbernav
  font: bold 12px;
 }
 
-ul.tabbernav li
+div#product-description ul.tabbernav li
 {
  list-style: none;
  margin: 0;
  display: inline;
 }
 
-ul.tabbernav li a
+div#product-description ul.tabbernav li a
 {
  padding: 3px 0.5em;
  margin-left: 3px;
@@ -47,23 +47,23 @@ ul.tabbernav li a
  text-decoration: none;
 }
 
-ul.tabbernav li a:link { color: #000033; }
-ul.tabbernav li a:visited { color: #000033; }
+div#product-description ul.tabbernav li a:link { color: #000033; }
+div#product-description ul.tabbernav li a:visited { color: #000033; }
 
-ul.tabbernav li a:hover
+div#product-description ul.tabbernav li a:hover
 {
  color: #fff;
  background: #000033;
  border-color: #000;
 }
 
-ul.tabbernav li.tabberactive a
+div#product-description ul.tabbernav li.tabberactive a
 {
  background-color: #eee;
  border: 1px solid #eee;
 }
 
-ul.tabbernav li.tabberactive a:hover
+div#product-description ul.tabbernav li.tabberactive a:hover
 {
 /* color: #000;
  background: white;
@@ -74,7 +74,7 @@ ul.tabbernav li.tabberactive a:hover
   .tabbertab = the tab content
   Add style only after the tabber interface is set up (.tabberlive)
   --------------------------------------------------*/
-.tabberlive .tabbertab {
+div#product-description .tabberlive .tabbertab {
  padding:5px;
  border:1px solid #eee;
  border-top:0;

@@ -212,6 +212,8 @@ GEM
       stringex (= 1.0.3)
     spree_dash (0.70.3)
       spree_core (= 0.70.3)
+    spree_paypal_website_standard (0.8.4)
+      spree_core (>= 0.70.1)
     spree_promo (0.70.3)
       spree_auth (= 0.70.3)
       spree_core (= 0.70.3)
@@ -254,6 +256,7 @@ DEPENDENCIES
   spree_email_to_friend!
   spree_flexi_variants!
   spree_last_address!
+  spree_paypal_website_standard (= 0.8.4)
   spree_store_credits!
   turn (= 0.8.2)
   uglifier (>= 1.0.3)
